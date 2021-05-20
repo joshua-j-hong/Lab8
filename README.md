@@ -1,7 +1,7 @@
 # Lab8
 
 ## Partners
-Ricardo Guerrero
+Ricardo Guerrero <br >
 Joshua Hong
 
 ## Check your understanding q's (FILL OUT)
@@ -22,7 +22,7 @@ We would use a unit test to test the "max message length" feature as it is a sma
 If we ran our puppeteer tests with "headless" set to true, a browser wouldn't open up when we run the tests. Instead, we would only see the results of the test in the terminal rather than the simulated user activity in the browser.
 
 5. What would your beforeAll callback look like if you wanted to start from the settings page before every test case?
-
+```
   beforeAll(async () => {
     await page.goto('http://127.0.0.1:5500');
     await page.waitForTimeout(500);
@@ -30,3 +30,4 @@ If we ran our puppeteer tests with "headless" set to true, a browser wouldn't op
     await settings.evaluate( settings => settings.click() );
 
   });
+```
